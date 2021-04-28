@@ -1,0 +1,20 @@
+.navbar{
+	height: 8%;
+}
+.card-body-icon{
+	position: absolute;
+	z-index: 0;
+	top: 25px;
+	right: 4px;
+	opacity: 0.4;
+	font-size: 90px;
+}
+.nav-link:hover {
+background-color: grey;
+}
+.fas{
+	padding-right: 3px;
+}
+.display-4{
+	font-weight: bold;
+}
