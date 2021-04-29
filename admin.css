@@ -18,3 +18,10 @@ background-color: grey;
 .display-4{
 	font-weight: bold;
 }
+
+header { 
+	background-color:#c5bb85;
+	height: 150px; 
+	margin-right: none;
+	
+}
