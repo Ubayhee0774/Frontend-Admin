@@ -1,100 +1,185 @@
-body{
-	margin: 0;
+* {
 	padding: 0;
-	background: url(background.png);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family: sans-serif;
+	margin: 0;
 }
 
-.login{
-	position: absolute;
-	top: 50%
-	left:50%;
-	transform: translate(200%, 70%);
-	background: rgba(0, 0, 0, 0.5);
+body {
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	/*tidak bisa scroll kanan*/
+	/* background-color: aquamarine; */
+
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+}
+
+#login {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+	background-image: url(backgrund.jpg);
+
+}
+
+.warna {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(87, 255, 87, 0.1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container-login {
+	width: 35%;
+	height: 45%;
+	background-color: rgb(0, 0, 0, 0.4);
+	position: relative;
+
+	box-shadow: black 0px 0px 10px 5px;
+
 	padding: 20px;
-	width: 270px;
-	box-shadow: 0 0 10px 5px black;
 }
 
-.avatar{
-	font-size: 50px;
-	background: #bdc3c7;
-	width: 60px;
-	height: 60px;
-	line-height: 50px;
-	text-align: center;
-	position: fixed;
-	left: 50%;
-	top: 0;
-	transform: translate(-50%, -50%);
-	border-radius: 50%; 
-}
-
-.login h2{
-	text-align: center;
-	color: white;
-	padding-top: 10px;
-	letter-spacing: 5px;
-}
-
-.box-login {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 15px;
-	border-bottom: 2px solid white;
-	padding: 8px 0;
-
-}
-
-.box-login i{
-	font-size: 20px;
-	color: white;
-}
-
-.box-login input{
+.container-atas {
 	width: 100%;
-	padding: 0 10px;
-	background: none;
-	border: none;
+	height: 10%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Alata", sans-serif;
+	font-size: 25px;
+	/* background-color: greenyellow; */
+
+	position: relative;
+	top: 15px;
+}
+
+.container-tengah {
+	position: relative;
+	top: 65px;
+}
+
+#user {
+	font-size: 32px;
+	padding-right: 10px;
+}
+
+.container-username2 {
+	width: 90%;
+	height: 10%;
+
+	display: flex;
+
+	align-items: center;
+
+	/* border: 2px solid #fff; */
+
+	margin-bottom: 40px;
+}
+
+input[type="text1"] {
+	width: 100%;
 	outline: none;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	padding: 6px;
+	background-color: transparent;
+	color: #111;
 }
 
-.box-login input::placeholder {
-	color: white;
+/* Password */
+#password {
+	font-size: 32px;
+	padding-right: 10px;
 }
 
-.btn-login{
-	width: 100%;
-	background: none;
-	padding: 15px;
-	border: 1px solid white;
-	font-size: 18px;
-	letter-spacing: 5px;
-	color: white;
-	cursor: pointer;
-	transition: 0.3s;
-}
 
-.btn-login:hover{
-	background: rgba(0, 0, 0, 0.8);
-}
 
-.bottom {
+.container-password2 {
+	width: 90%;
+	height: 10%;
+
 	display: flex;
-	justify-content: space-between;
-	margin-top: 10px;
+
+	align-items: center;
+
+	/* border: 2px solid #fff; */
 }
 
-.bottom a{
-	color: white;
-	font-size: 14px;
-	text-decoration: none;
+input[type="text2"] {
+	width: 100%;
+	outline: none;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	padding: 6px;
+	background-color: transparent;
+	color: #111;
 }
 
-.bottom a:hover {
-	text-decoration: underline;
+.container-printah {
+	width: 100%;
+	height: 50%;
+	/* background-color: lightblue; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	top: 70px;
+}
+
+#logins {
+	width: 40%;
+	height: 50px;
+	/* border-radius: 16px; */
+	/* border: none; */
+	font-family: 'Roboto Slab', serif;
+	/* background-color: bisque; */
+	border: 2px solid white;
+
+	background-color: transparent;
+	font-size: 20px;
+	position: relative;
+	top: 0px;
+
+}
+
+#logins:hover {
+	background-color: rgb(255, 196, 0);
+}
+
+/* Tablet */
+@media screen and (max-width: 876px) {
+	.container-login {
+		width: 70%;
+		height: 65%;
+		/* display: flex;
+		justify-content: center;
+		align-items: center; */
+		height: 45%;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+	.container-login {
+		width: 70%;
+		height: 65%;
+		/* display: flex;
+		justify-content: center;
+		align-items: center; */
+		height: 45%;
+	}
 }
