@@ -19,15 +19,4 @@ background-color: grey;
 	font-weight: bold;
 }
 
-header { 
-	background-color:aqua;
-	height: 150px; 
-	margin-right: none;
-	
-}
-.judul{
-	position: relative;
-	top: -90px;
-	text-align: center;
-	font-family: cursive;
-}
+
